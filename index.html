@@ -120,12 +120,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>10</td><td>{calculateAmount(10)}</td></tr>
-                        <tr><td>20</td><td>{calculateAmount(20)}</td></tr>
-                        <tr><td>50</td><td>{calculateAmount(50)}</td></tr>
-                        <tr><td>{calculatePrice(100)}</td><td>100</td></tr>
-                        <tr><td>{calculatePrice(200)}</td><td>200</td></tr>
-                        <tr><td>{calculatePrice(250)}</td><td>250</td></tr>
+                        <tr><td>Rs. 10 for</td><td>{calculateAmount(10)} grams</td></tr>
+                        <tr><td>Rs. 20 for</td><td>{calculateAmount(20)} grams</td></tr>
+                        <tr><td>Rs. 50 for</td><td>{calculateAmount(50)} grams</td></tr>
+                        <tr><td>Rs. {calculatePrice(100)} for</td><td>100 grams</td></tr>
+                        <tr><td>Rs. {calculatePrice(200)} for</td><td>200 grams</td></tr>
+                        <tr><td>Rs. {calculatePrice(250)} for</td><td>250 g (paav)</td></tr>
+                        <tr><td>Rs. {calculatePrice(500)} for</td><td>500 g (adha kilo)</td></tr>
                     </tbody>
                 </table>
             );
