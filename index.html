@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Calculator</title>
+    <title>Price Calculator 2</title>
+    <link rel="icon" type="image/x-icon" href="/Calculator Icon.png">
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
@@ -38,6 +39,9 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
+            overflow-y: hidden;
+            background-image: url(/wallpaper.jpeg);
+            background-size: cover;
         }
 
         .scrollable-list {
@@ -51,15 +55,23 @@
             min-width: 60px;
             height: 40px;
             margin-right: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #ababab;
             border-radius: 20px;
             background-color: #f0f0f0;
             font-size: 16px;
             cursor: pointer;
         }
 
+        .number-button:hover{
+            color: #ffffff;
+            background-color: #4c4c4c;
+            box-shadow: 2px 2px 4px #787878;
+            border: border-box;
+            border: 4px solid #009fa8;
+        }
+
         .number-button.selected {
-            background-color: #007bff;
+            background-color: #009fa8;
             color: white;
         }
 
